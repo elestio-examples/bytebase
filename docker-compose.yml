@@ -8,4 +8,4 @@ services:
       - "172.17.0.1:8458:8080"
     volumes:
       - ./data:/var/opt/bytebase
-    command: --data /var/opt/bytebase --external-url https://bytebase.example.com --port 8080
+    command: --data /var/opt/bytebase --external-url https://${DOMAIN} --port 8080
