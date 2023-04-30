@@ -7,6 +7,22 @@ ports:
     public: true
     path: "/"
     isAuth: false
+  - protocol: "HTTPS"
+    targetProtocol: "HTTP"
+    listeningPort: "4306"
+    targetPort: "3406"
+    targetIP: "172.17.0.1"
+    public: true
+    path: "/"
+    isAuth: false
+  - protocol: "HTTPS"
+    targetProtocol: "HTTP"
+    listeningPort: "4307"
+    targetPort: "3407"
+    targetIP: "172.17.0.1"
+    public: true
+    path: "/"
+    isAuth: false
 environments:
   - key: "ADMIN_PASSWORD"
     value: "random_password"
@@ -14,8 +30,6 @@ environments:
     value: "[EMAIL]"
   - key: "DOMAIN"
     value: "[CI_CD_DOMAIN]"
-  - key: "EXTERNAL_URL"
-    value: "https://[CI_CD_DOMAIN]"
   - key: "SMTP_HOST"
     value: "172.17.0.1"
   - key: "SMTP_PORT"
@@ -24,22 +38,6 @@ environments:
     value: "NONE"
   - key: "SMTP_FROM_EMAIL"
     value: "[DOMAIN]@vm.elestio.app"
-  - key: "CRUX_POSTGRES_PASSWORD"
-    value: "random_password"
-  - key: "KRATOS_POSTGRES_PASSWORD"
-    value: "random_password"
-  - key: "CRUX_SECRET"
-    value: "random_password"
-  - key: "KRATOS_SECRET"
-    value: "random_password"
-  - key: "SMTP_URI"
-    value: "smtp://172.17.0.1:25?disable_starttls=true"
-  - key: "RECAPTCHA_SECRET_KEY"
-    value: "random_password"
-  - key: "RECAPTCHA_SITE_KEY"
-    value: "random_password"
-  - key: "FROM_NAME"
-    value: "dyrectorio"
 
 config:
   runTime: "dockerCompose"
