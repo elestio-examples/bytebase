@@ -10,8 +10,29 @@ Deploy Bytebase server with CI/CD on Elestio
 
 # Once deployed ...
 
-You can open Bytebase UI here:
+Vous devrez vous inscrire pour creer un compte adnmin
 
-    URL: https://[CI_CD_DOMAIN]
-    email: root
-    password: [ADMIN_PASSWORD]
+# SMTP
+
+To configure the SMTP server, you will need to click on the Settings tab at the top, and on the left side, on Mail delivery.
+
+this step will be done twice,
+
+the first time fill in the following information:
+
+        SMTP Server Host: [SMTP_HOST]
+        SMTP Server Port: [SMTP_PORT]
+        From: [SMTP_FROM_EMAIL]
+
+        Authentication Method: LOGIN
+
+        SMTP Username: root
+        SMTP Password: [ADMIN_PASSWORD]
+
+        Encryption: NONE
+
+Save, and immediately change
+
+        Authentication Method to NONE
+
+Save again, your SMTP server is configured
