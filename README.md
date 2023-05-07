@@ -20,9 +20,9 @@ this step will be done twice,
 
 the first time fill in the following information:
 
-        SMTP Server Host: [SMTP_HOST]
-        SMTP Server Port: [SMTP_PORT]
-        From: [SMTP_FROM_EMAIL]
+        SMTP Server Host: 172.17.0.1
+        SMTP Server Port: 25
+        From: [DOMAIN]@vm.elestio.app
 
         Authentication Method: LOGIN
 
