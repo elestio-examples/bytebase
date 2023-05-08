@@ -10,7 +10,7 @@ Deploy Bytebase server with CI/CD on Elestio
 
 # Once deployed ...
 
-Vous devrez vous inscrire pour creer un compte adnmin
+You will need to register to create an admin account
 
 # SMTP
 
