@@ -10,9 +10,9 @@
 
 [Bytebase](https://github.com/bytebase/bytebase.git) is a self-hosted, database-less note-taking web app that utilises a flat folder of markdown files for storage.
 
-<img src="https://github.com/elestio-examples/flatnotes/raw/main/Flatnotes.png" alt="flatnotes" width="800">
+<img src="https://github.com/elestio-examples/bytebase/raw/main/bytebase.png" alt="flatnotes" width="800">
 
-Deploy a <a target="_blank" href="https://elest.io/open-source/flatnotes">fully managed Flatnotes</a> on <a target="_blank" href="https://elest.io/">elest.io</a> if you want automated backups, reverse proxy with SSL termination, firewall, automated OS & Software updates, and a team of Linux experts and open source enthusiasts to ensure your services are always safe, and functional.
+Deploy a <a target="_blank" href="https://elest.io/open-source/bytebase">fully managed Bytebase</a> on <a target="_blank" href="https://elest.io/">elest.io</a> if you want automated backups, reverse proxy with SSL termination, firewall, automated OS & Software updates, and a team of Linux experts and open source enthusiasts to ensure your services are always safe, and functional.
 
 [![deploy](https://github.com/elestio-examples/bytebase/raw/main/deploy-on-elestio.png)](https://dash.elest.io/deploy?source=cicd&social=dockerCompose&url=https://github.com/elestio-examples/flatnotes)
 
