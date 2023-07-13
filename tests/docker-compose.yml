@@ -2,7 +2,7 @@ version: "3.3"
 
 services:
   bytebase:
-    image: elestio4test/bytebase:latest
+    image: elestio4test/bytebase:${SOFTWARE_VERSION_TAG}
     init: true
     container_name: bytebase
     restart: always
