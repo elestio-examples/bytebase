@@ -51,28 +51,28 @@ You can access the Web UI at: `http://your-domain:8458`
 
 Here are some example snippets to help you get started creating a container.
 
-version: "3.3"
-services:
-  bytebase:
-    image: elestio4test/bytebase:${SOFTWARE_VERSION_TAG}
-    init: true
-    container_name: bytebase
-    restart: always
-    ports:
-      - "172.17.0.1:8458:5678"
-    volumes:
-      - ~/.bytebase/data:/var/opt/bytebase
-    command: ["--data", "/var/opt/bytebase","--external-url","https://${DOMAIN}", "--port", "5678"]
-
-  employee-prod:
-    image: bytebase/sample-database:mysql-employee-small
-    ports:
-      -  172.17.0.1:3406:3306
-
-  employee-test:
-    image: bytebase/sample-database:mysql-employee-small
-    ports:
-      -  172.17.0.1:3407:3306
+    version: "3.3"
+    services:
+      bytebase:
+        image: elestio4test/bytebase:${SOFTWARE_VERSION_TAG}
+        init: true
+        container_name: bytebase
+        restart: always
+        ports:
+          - "172.17.0.1:8458:5678"
+        volumes:
+          - ~/.bytebase/data:/var/opt/bytebase
+        command: ["--data", "/var/opt/bytebase","--external-url","https://${DOMAIN}", "--port", "5678"]
+    
+      employee-prod:
+        image: bytebase/sample-database:mysql-employee-small
+        ports:
+          -  172.17.0.1:3406:3306
+    
+      employee-test:
+        image: bytebase/sample-database:mysql-employee-small
+        ports:
+          -  172.17.0.1:3407:3306
 
 # Maintenance
 
