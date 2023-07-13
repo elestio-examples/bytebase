@@ -2,20 +2,22 @@ version: "3.3"
 
 services:
   bytebase:
-    image: elestio4tech/bytebase:${SOFTWARE_VERSION_TAG}
+    image: elestio4test/bytebase:latest
+    init: true
+    container_name: bytebase
     restart: always
     ports:
-      - "172.17.0.1:8458:8080"
+      - "172.17.0.1:8458:5678"
     volumes:
-      - ./data:/var/opt/bytebase
-    command: --data /var/opt/bytebase --external-url https://${DOMAIN} --port 8080
+      - ~/.bytebase/data:/var/opt/bytebase
+    command: ["--data", "/var/opt/bytebase", "--port", "5678"]
 
   employee-prod:
     image: bytebase/sample-database:mysql-employee-small
     ports:
-      - 172.17.0.1:3406:3306
+      -  172.17.0.1:3406:3306
 
   employee-test:
     image: bytebase/sample-database:mysql-employee-small
     ports:
-      - 172.17.0.1:3407:3306
+      -  172.17.0.1:3407:3306
