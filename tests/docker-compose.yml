@@ -8,8 +8,11 @@ services:
     ports:
       - "172.17.0.1:8458:5678"
     volumes:
-      - ~/.bytebase/data:/var/opt/bytebase
+      - /.bytebase/data:/var/opt/bytebase
     command: ["--data", "/var/opt/bytebase", "--port", "5678"]
+    depends_on:
+      - employee-prod
+      - employee-test
 
   employee-prod:
     image: bytebase/sample-database:mysql-employee-small
