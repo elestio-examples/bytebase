@@ -23,7 +23,7 @@ environments:
   - key: "SMTP_FROM_EMAIL"
     value: "[DOMAIN]@vm.elestio.app"
   - key: "SOFTWARE_VERSION_TAG"
-    value: "1.17.0"
+    value: "latest"
 config:
   runTime: "dockerCompose"
   version: ""
